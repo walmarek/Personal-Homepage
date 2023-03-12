@@ -1,11 +1,13 @@
 export const theme = {
   color: {
     white: "#FFFFFF",
-    ghostWhite: "#FEFEFB",
-    platinum: "#E5E5E5",
-    trueBlue: "#0366D6",
+    ghostWhite: "#FBFBFE",
+    lightGrey: "#E5E5E5",
+    iron: "#D1D5DA",
     gainsboro: "#DADADA",
-    slateGray: "#6E7E91",
-    raisinBlack: "#0366D6",
+    slateGrey: "#6E7E91",
+    trueBlue: "#0366D6",
+    mineShaft: "#363636",
+    raisinBlack: "#252525",
   },
 };
