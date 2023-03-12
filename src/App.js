@@ -1,10 +1,21 @@
-import './App.css';
+
+import { Footer } from "./Footer";
+import { GlobalStyle } from "./GlobalStyle";
+import { Header } from "./Header";
+import { Main } from "./Main";
+import useToggleDarkTheme from "./useToggleDarkTheme";
 
 function App() {
+  const darkTheme = useToggleDarkTheme()
+
   return (
-    <div className="App">
-      
-    </div>
+    <>
+    <GlobalStyle toggleDarkMode={darkTheme}/>
+    <Header />
+    <Main />
+    <Footer />
+    </>
+    
   );
 }
 
