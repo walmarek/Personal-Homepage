@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/personal-homepage/static/js/main.ddc2cf0f.js",
+    "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
+    "static/media/marek-wal-photo.jpg": "/personal-homepage/static/media/marek-wal-photo.6c1b9dd86fefd0e1d656.jpg",
+    "static/media/insta-icon.svg": "/personal-homepage/static/media/insta-icon.7ec3572464e8eee9d28b49d83af986e6.svg",
+    "index.html": "/personal-homepage/index.html",
+    "static/media/shape-icon.svg": "/personal-homepage/static/media/shape-icon.ed3d520c19568c3e3b6684c2380703c7.svg",
+    "static/media/danger.svg": "/personal-homepage/static/media/danger.457bab9844e49da22fdd30aaa1c6f510.svg",
+    "static/media/linkedin-icon.svg": "/personal-homepage/static/media/linkedin-icon.9f38a04c76c9595b2da81e0828807b47.svg",
+    "static/media/weather-sunny.svg": "/personal-homepage/static/media/weather-sunny.f724e889289c6cbf7c71380b5011f29b.svg",
+    "static/media/message-icon.svg": "/personal-homepage/static/media/message-icon.989ae1682343e29abc4cecce8d3d543d.svg",
+    "static/media/weather-night.svg": "/personal-homepage/static/media/weather-night.2afd3e7710652f944bcf47459fc1504c.svg",
+    "static/media/facebook-icon.svg": "/personal-homepage/static/media/facebook-icon.c86c9160f434f5f752b172ce0fe890d9.svg",
+    "static/media/ellipse.svg": "/personal-homepage/static/media/ellipse.c28602c8be31d96b4a27bc3627dd6f6f.svg",
+    "main.ddc2cf0f.js.map": "/personal-homepage/static/js/main.ddc2cf0f.js.map",
+    "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ddc2cf0f.js"
+  ]
+}
