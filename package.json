@@ -1,7 +1,7 @@
 {
   "name": "personal-homepage",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://walmarek.github.io/personal-homepage/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
