@@ -3,64 +3,69 @@ export const mySkills = [
     skill: "Semantic & accessibility HTML",
   },
   {
-    skill: "CSS BEM convention",
-  },
-  {
-    skill: "CSS Grid",
-  },
-  {
-    skill: "CSS Flexbox",
-  },
-  {
-    skill: "JavaScript/: ES6+",
-  },
-  {
-    skill: "React.js",
-  },
-  {
     skill: "React-Router",
-  },
-  {
-    skill: "Redux/Toolkit",
-  },
-  {
-    skill: "React Hooks",
-  },
-  {
-    skill: "API (fetch,axios)",
-  },
-  {
-    skill: "Promises, Async/Await",
-  },
-  {
-    skill: "Error handling",
-  },
-  {
-    skill: "Immutability",
   },
   {
     skill: "GitHub Pull Requests & Review",
   },
   {
+    skill: "CSS",
+  },
+  {
+    skill: "Redux/Toolkit",
+  },
+  {
     skill: "Git",
   },
   {
-    skill: "NPM",
+    skill: "CSS BEM convention",
+  },
+  {
+    skill: "React Hooks",
+  },
+  {
+    skill: "Teamwork",
+  },
+  {
+    skill: "CSS Grid",
+  },
+  {
+    skill: "API (fetch,axios)",
   },
   {
     skill: "Scrum",
   },
   {
+    skill: "CSS Flexbox",
+  },
+  {
+    skill: "Promises, Async/Await",
+  },
+  {
     skill: "Trello",
+  },
+  {
+    skill: "JavaScript: ES6+",
+  },
+  {
+    skill: "Error handling",
   },
   {
     skill: "Jira",
   },
   {
+    skill: "React.js",
+  },
+
+  {
+    skill: "Immutability",
+  },
+
+  {
     skill: "Markdown",
   },
   {
-    skill: "Teamwork",
+    skill: "NPM",
   },
 ];
 
