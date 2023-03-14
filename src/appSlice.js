@@ -1,22 +1,37 @@
-import {createSlice } from "@reduxjs/toolkit";
-
+import { createSlice } from "@reduxjs/toolkit";
 
 const appSlice = createSlice({
-    name: "app",
-    initialState: {
-        darkTheme: false,
-        
-    }, 
-    reducers: {
-toggleDarkTheme: state => {
-    state.darkTheme = !state.darkTheme;
-}
-    }
-})
+  name: "app",
+  initialState: {
+    darkTheme: false,
+    loading: false,
+    repos: [],
+  },
+  reducers: {
+    toggleDarkTheme: (state) => {
+      state.darkTheme = !state.darkTheme;
+    },
 
-export const {toggleDarkTheme } = appSlice.actions;
+    setLoadingSuccess: (state) => {
+      state.loading = true;
+    },
 
-export const selectAppState = state => state.app;
-export const selectDarkTheme = state => selectAppState(state).darkTheme;
+    setLoadingError: (state) => {
+      state.loading = false;
+    },
 
-export default appSlice.reducer
+    setRepos: (state, { payload: repos }) => {
+      state.repos = repos;
+    },
+  },
+});
+
+export const { toggleDarkTheme, setRepos, setLoadingSuccess, setLoadingError, setSkills } =
+  appSlice.actions;
+
+export const selectAppState = (state) => state.app;
+export const selectDarkTheme = (state) => selectAppState(state).darkTheme;
+export const selectRepos = (state) => selectAppState(state).repos;
+export const selectLoadingState = (state) => selectAppState(state).loading
+
+export default appSlice.reducer;
