@@ -7,17 +7,18 @@ const appSlice = createSlice({
     loading: false,
     repos: [],
   },
+  
   reducers: {
     toggleDarkTheme: (state) => {
       state.darkTheme = !state.darkTheme;
     },
 
     setLoadingSuccess: (state) => {
-      state.loading = true;
+      state.loading = "success";
     },
 
     setLoadingError: (state) => {
-      state.loading = false;
+      state.loading = "error";
     },
 
     setRepos: (state, { payload: repos }) => {
@@ -26,12 +27,17 @@ const appSlice = createSlice({
   },
 });
 
-export const { toggleDarkTheme, setRepos, setLoadingSuccess, setLoadingError, setSkills } =
-  appSlice.actions;
+export const {
+  toggleDarkTheme,
+  setRepos,
+  setLoadingSuccess,
+  setLoadingError,
+  setSkills,
+} = appSlice.actions;
 
 export const selectAppState = (state) => state.app;
 export const selectDarkTheme = (state) => selectAppState(state).darkTheme;
 export const selectRepos = (state) => selectAppState(state).repos;
-export const selectLoadingState = (state) => selectAppState(state).loading
+export const selectLoadingState = (state) => selectAppState(state).loading;
 
 export default appSlice.reducer;
