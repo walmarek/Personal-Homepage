@@ -45,7 +45,7 @@ export const mySkills = [
     skill: "Trello",
   },
   {
-    skill: "JavaScript: ES6+",
+    skill: "JavaScript ES6+",
   },
   {
     skill: "Error handling",
