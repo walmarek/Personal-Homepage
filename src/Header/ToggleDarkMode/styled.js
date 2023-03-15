@@ -59,3 +59,8 @@ export const Circle = styled.div`
       transform: translate(36px) rotate(180deg);
     `}
 `;
+export const Span = styled.span`
+ @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+    display: none;
+    }
+`

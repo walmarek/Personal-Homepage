@@ -6,6 +6,11 @@ export const PortfolioList = styled.ul`
   grid-template-columns: auto auto;
   gap: 32px;
   margin-top: 24px;
+
+  @media (max-width: ${({theme}) => theme.breakpoint.tablet}) {
+    display: grid;
+    grid-template-columns: auto;
+    }
 `;
 export const RepoTile = styled.li`
   list-style: none;

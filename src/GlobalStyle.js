@@ -31,7 +31,9 @@ html {
         color: ${({ theme }) => theme.color.white};
         background: ${({ theme }) => theme.color.raisinBlack};
       `}
-  }
-  
 
+      @media (max-width: ${({ theme }) => theme.breakpoint.laptop}) {
+margin: 16px;
+}
+  }
 `;

@@ -1,4 +1,4 @@
-import { Circle, DarkMode, DarkModeButton, MoonIcon, SunIcon } from "./styled";
+import { Circle, DarkMode, DarkModeButton, MoonIcon, Span, SunIcon } from "./styled";
 import NightIcon from "../../images/weather-night.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { selectDarkTheme, toggleDarkTheme } from "../../appSlice";
@@ -9,7 +9,7 @@ export const ToggleDarkMode = () => {
 
   return (
     <DarkMode>
-      <span>DARK MODE{darkTheme ? " ON" : " OFF"}</span>
+      <Span>DARK MODE{darkTheme ? " ON" : " OFF"}</Span>
       <DarkModeButton
         toggleDarkMode={darkTheme}
         onClick={() => dispatch(toggleDarkTheme())}

@@ -6,6 +6,10 @@ export const ImageHeader = styled.img`
   max-height: 398px;
   margin-right: 66px;
   border-radius: 50%;
+
+  @media (max-width: ${({theme}) => theme.breakpoint.laptop}) {
+    width: fit-content;
+    }
 `;
 
 export const Span = styled.span`

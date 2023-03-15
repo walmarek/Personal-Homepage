@@ -2,6 +2,8 @@ import styled, { css } from "styled-components";
 
 export const Box = styled.div`
   max-width: 1219px;
+  display: grid;
+  grid-template-columns: auto;;
   box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.cetaceanBlue}08,
     0px -2px 50px 0px ${({ theme }) => theme.color.cetaceanBlue}05;
   border-radius: 4px;
@@ -20,3 +22,4 @@ export const Box = styled.div`
       box-shadow: 0px -2px 50px 0px ${({ theme }) => theme.color.cetaceanBlue}05;
     `}
 `;
+

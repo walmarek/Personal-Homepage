@@ -15,4 +15,10 @@ export const theme = {
     mineShaft: "#363636",
     raisinBlack: "#252525",
   },
+
+  breakpoint: {
+    laptop: "1024px",
+    tablet: "768px",
+    mobile: "425px",
+  },
 };

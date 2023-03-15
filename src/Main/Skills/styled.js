@@ -30,7 +30,23 @@ export const List = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   column-gap: 115px;
+
+  @media (max-width: ${({theme}) => theme.breakpoint.tablet}) {
+    display: grid;
+    grid-template-columns: auto auto;
+    }
+    @media (max-width: ${({theme}) => theme.breakpoint.laptop}) {
+    display: grid;
+    grid-template-columns: auto auto;
+    }
+
+    @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+    display: grid;
+    grid-template-columns: auto;
+    }
+
 `;
+
 export const EllipseIcon = styled(Ellipse)`
   margin-right: 16px;
   justify-content: center;
