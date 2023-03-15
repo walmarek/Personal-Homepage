@@ -14,8 +14,8 @@ html {
   body {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    color: ${({theme}) => theme.color.slateGrey};   
-    background-color: ${({theme}) => theme.color.ghostWhite};
+    color: ${({ theme }) => theme.color.slateGrey};   
+    background: ${({ theme }) => theme.color.ghostWhite};
     max-width: 1216px;
     flex-basis: content
     ;
@@ -23,12 +23,14 @@ html {
     display: flex;
     justify-content: center;
     align-content: center;
-    transition: 0.6s ease-in;
+    transition: 0.4s ease-in;
 
-    ${({toggleDarkMode}) => toggleDarkMode && css`
-    color: ${({theme}) => theme.color.white};   
-    background-color: ${({theme}) => theme.color.raisinBlack};
-    `}
+    ${({ toggleDarkMode }) =>
+      toggleDarkMode &&
+      css`
+        color: ${({ theme }) => theme.color.white};
+        background: ${({ theme }) => theme.color.raisinBlack};
+      `}
   }
   
 
