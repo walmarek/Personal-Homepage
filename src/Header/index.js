@@ -1,4 +1,4 @@
-import { Container } from "../Container/styled";
+import { Container } from "../Container";
 import {
   ImageHeader,
   Span,
@@ -12,6 +12,7 @@ import myImage from "../images/marek-wal-photo.jpg";
 import { Button } from "../Button";
 import { ToggleDarkMode } from "./ToggleDarkMode";
 import useToggleDarkTheme from "../useToggleDarkTheme";
+import { ContactLink } from "../ContactLink";
 
 export const Header = () => {
   const darkTheme = useToggleDarkTheme();
@@ -27,10 +28,12 @@ export const Header = () => {
             👨🏻💻I'm enthusiastic & ambitious Trainee Frontend Developer with
             great passion for IT, currently looking for new job opportunities.
           </ContainerInfo>
-          <Button>
-            <EmailIcon />
-            <Span>Hire Me</Span>
-          </Button>
+          <ContactLink href={"mailto: walmarek1987@gmail.com"}>
+            <Button>
+              <EmailIcon />
+              <Span>Hire Me</Span>
+            </Button>
+          </ContactLink>
         </Aside>
         <ToggleDarkMode />
       </Container>
