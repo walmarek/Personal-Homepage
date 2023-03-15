@@ -21,7 +21,7 @@ export const DarkModeButton = styled.button`
   background-color: ${({ theme }) => theme.color.raisinBlack};
   box-shadow: 0 0 2px ${({ theme }) => theme.color.raisinBlack};
   cursor: pointer;
-  transition: 0.6s ease-in;
+  transition: 0.4s ease-in;
 
   ${({ toggleDarkMode }) =>
     toggleDarkMode &&
