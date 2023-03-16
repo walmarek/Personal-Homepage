@@ -1,7 +1,7 @@
 
 # Personal Homepage
 
-This project contains list of my techskills and list of skills I want to develop, also links to all my projects on GitHub.
+This project contains list of my skills and list of skills I want to develop, also links to all my projects on GitHub.
 
 
 ## Demo
