@@ -17,12 +17,7 @@ html {
     color: ${({ theme }) => theme.color.slateGrey};   
     background: ${({ theme }) => theme.color.ghostWhite};
     max-width: 1216px;
-    flex-basis: content
-    ;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    margin: 6px auto; 
     transition: 0.4s ease-in;
 
     ${({ toggleDarkMode }) =>

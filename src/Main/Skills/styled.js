@@ -17,6 +17,12 @@ export const SkillsTitle = styled.h2`
     css`
       color: ${({ theme }) => theme.color.white};
     `}
+
+    @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+    font-size: 18px;
+    margin: 16px;
+    padding: 0;
+    }
 `;
 
 export const List = styled.ul`
@@ -24,8 +30,6 @@ export const List = styled.ul`
   padding: 0;
   padding-bottom: 32px;
   margin-left: 34px;
-  font-size: 18px;
-  line-height: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
@@ -34,17 +38,14 @@ export const List = styled.ul`
   @media (max-width: ${({theme}) => theme.breakpoint.tablet}) {
     display: grid;
     grid-template-columns: auto auto;
+    column-gap: 20px;
     }
-    @media (max-width: ${({theme}) => theme.breakpoint.laptop}) {
-    display: grid;
-    grid-template-columns: auto auto;
-    }
-
     @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
     display: grid;
     grid-template-columns: auto;
+    margin: 16px;
+    padding: 0;
     }
-
 `;
 
 export const EllipseIcon = styled(Ellipse)`
@@ -59,4 +60,17 @@ export const EllipseIcon = styled(Ellipse)`
     `}
 `;
 
-export const Item = styled.li``;
+export const Item = styled.li`
+font-size: 18px;
+  line-height: 25px;
+
+  @media (max-width: ${({theme}) => theme.breakpoint.tablet}) {
+    font-size: 14px;
+    line-height: 17px;
+    }
+
+  @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+    font-size: 14px;
+    line-height: 17px;
+    }
+`;

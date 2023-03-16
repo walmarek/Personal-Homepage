@@ -2,7 +2,7 @@ import { ContactLink } from "../ContactLink";
 import { Container } from "../Container";
 import useToggleDarkTheme from "../useToggleDarkTheme";
 import {
-  Content,
+  FooterContent,
   ContentElement,
   ContentInfo,
   ContentTitle,
@@ -18,7 +18,7 @@ export const Footer = () => {
 
   return (
     <Container toggleDarkMode={darkTheme}>
-      <Content>
+      <FooterContent>
         <ContentElement>LET'S TALK</ContentElement>
         <ContactLink href={"mailto: walmarek1987@gmail.com"}>
           <ContentTitle toggleDarkMode={darkTheme}>
@@ -61,7 +61,7 @@ export const Footer = () => {
             <Insta toggleDarkMode={darkTheme} />
           </ContactLink>
         </FooterIcons>
-      </Content>
+      </FooterContent>
     </Container>
   );
 };

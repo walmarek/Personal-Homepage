@@ -11,6 +11,7 @@ import {
   RepoLinks,
   RepoTile,
   RepoTitle,
+  RepoUrl,
 } from "./styled";
 
 export const Portfolio = () => {
@@ -39,7 +40,7 @@ export const Portfolio = () => {
                   rel="me"
                   target="_blank"
                 >
-                  {repo.homepage.replaceAll("https://", "")}
+                  <RepoUrl>{repo.homepage.replaceAll("https://", "")}</RepoUrl>
                 </RepoLink>
                 Code:
                 <RepoLink
@@ -48,7 +49,7 @@ export const Portfolio = () => {
                   rel="me"
                   target="_blank"
                 >
-                  {repo.html_url.replaceAll("https://", "")}
+                  <RepoUrl>{repo.html_url.replaceAll("https://", "")}</RepoUrl>
                 </RepoLink>
               </RepoLinks>
             </RepoTile>

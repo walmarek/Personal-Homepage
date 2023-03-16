@@ -4,16 +4,22 @@ import { ReactComponent as FacebookIcon } from "../images/facebook-icon.svg";
 import { ReactComponent as LinkedinIcon } from "../images/linkedin-icon.svg";
 import { ReactComponent as InstaIcon } from "../images/insta-icon.svg";
 
-export const Content = styled.div`
+export const FooterContent = styled.div`
   max-width: 670px;
   margin-bottom: 109px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    margin-bottom: 31px;
+  }
 `;
+
 export const ContentElement = styled.span`
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
   color: ${({ theme }) => theme.color.slateGray};
 `;
+
 export const ContentTitle = styled.div`
   color: ${({ theme }) => theme.color.raisinBlack};
   font-size: 32px;
@@ -39,7 +45,14 @@ export const ContentTitle = styled.div`
         color: ${({ theme }) => theme.color.dodgerBlue};
       }
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 22px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
 `;
+
 export const ContentInfo = styled.div`
   color: ${({ theme }) => theme.color.raisinBlack};
   font-size: 18px;
@@ -52,7 +65,12 @@ export const ContentInfo = styled.div`
     css`
       color: ${({ theme }) => theme.color.white};
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 14px;
+  }
 `;
+
 export const FooterIcons = styled.div`
   display: flex;
   gap: 24px;
@@ -79,7 +97,13 @@ export const GitHub = styled(GitHubIcon)`
         color: ${({ theme }) => theme.color.dodgerBlue};
       }
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 32px;
+    height: 32px;
+  }
 `;
+
 export const Facebook = styled(FacebookIcon)`
   width: 48px;
   height: 48px;
@@ -100,7 +124,13 @@ export const Facebook = styled(FacebookIcon)`
         color: ${({ theme }) => theme.color.dodgerBlue};
       }
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 32px;
+    height: 32px;
+  }
 `;
+
 export const Linkedin = styled(LinkedinIcon)`
   width: 48px;
   height: 48px;
@@ -121,6 +151,11 @@ export const Linkedin = styled(LinkedinIcon)`
         color: ${({ theme }) => theme.color.dodgerBlue};
       }
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 export const Insta = styled(InstaIcon)`
@@ -143,4 +178,9 @@ export const Insta = styled(InstaIcon)`
         color: ${({ theme }) => theme.color.dodgerBlue};
       }
     `}
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 32px;
+    height: 32px;
+  }
 `;

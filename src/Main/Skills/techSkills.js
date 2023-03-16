@@ -80,12 +80,6 @@ export const toLearnSkills = [
     skill: "React Native",
   },
   {
-    skill: "React Native",
-  },
-  {
-    skill: "MySQL",
-  },
-  {
     skill: "Cypress",
   },
   {
@@ -102,9 +96,6 @@ export const toLearnSkills = [
     skill: "Node.js",
   },
   {
-    skill: "React Native",
-  },
-  {
-    skill: "Node.js",
+    skill: "My SQL",
   },
 ];

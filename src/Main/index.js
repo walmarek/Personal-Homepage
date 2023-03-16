@@ -1,7 +1,7 @@
 import useToggleDarkTheme from "../useToggleDarkTheme";
 import { Portfolio } from "./Portfolio";
 import { Skills } from "./Skills";
-import { mySkills, toLearnSkills } from "./techSkills";
+import { mySkills, toLearnSkills } from "./Skills/techSkills";
 
 export const Main = () => {
   const darkTheme = useToggleDarkTheme();
