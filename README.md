@@ -4,13 +4,12 @@
 I'm a trainee frontend developer and this is my...
 
 # Personal Homepage
+[**Link**](https://walmarek.github.io/Personal-Homepage/)
 
 This project contains list of my skills and list of skills I want to develop, also links to all my projects on GitHub.
 
 
 ## Demo
-
-[**Link**](https://walmarek.github.io/Personal-Homepage/)
 
 <p align="center">
   <img src="https://github.com/walmarek/Personal-Homepage/blob/main/src/images/personal-homepage.gif?raw=true">
