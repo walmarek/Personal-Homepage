@@ -65,6 +65,9 @@ export const mySkills = [
     skill: "Markdown",
   },
   {
+skill: "Redux-saga",
+  },
+  {
     skill: "NPM",
   },
 ];
