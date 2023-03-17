@@ -8,9 +8,9 @@ export const ImageHeader = styled.img`
   margin-right: 66px;
   border-radius: 50%;
 
-  @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
-   max-width: 128px;
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    max-width: 128px;
+  }
 `;
 
 export const Span = styled.span`
@@ -20,15 +20,13 @@ export const Span = styled.span`
   margin: 0;
 `;
 
-export const EmailIcon = styled(MessageIcon)`
-
-`;
+export const EmailIcon = styled(MessageIcon)``;
 export const Aside = styled.div`
   margin-top: 68px;
 
-  @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 12px;
-    }
+  }
 `;
 
 export const ContainerElement = styled.span`
@@ -45,10 +43,11 @@ export const ContainerInfo = styled.div`
   line-height: 140%;
   margin-bottom: 32px;
 
-  @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-bottom: 24px;
-    }
+  }
 `;
+
 export const ContainerTitle = styled.h1`
   color: ${({ theme }) => theme.color.raisinBlack};
   font-size: 38px;
@@ -65,9 +64,9 @@ export const ContainerTitle = styled.h1`
       color: ${({ theme }) => theme.color.white};
     `}
 
-    @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 8px;
     margin-bottom: 16px;
     font-size: 28px;
-    }
+  }
 `;

@@ -1,6 +1,6 @@
+import { useDispatch, useSelector } from "react-redux";
 import { Circle, DarkMode, DarkModeButton, MoonIcon, Span, SunIcon } from "./styled";
 import NightIcon from "../../images/weather-night.svg";
-import { useDispatch, useSelector } from "react-redux";
 import { selectDarkTheme, toggleDarkTheme } from "../../appSlice";
 
 export const ToggleDarkMode = () => {

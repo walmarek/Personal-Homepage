@@ -1,6 +1,6 @@
+import useToggleDarkTheme from "../useToggleDarkTheme";
 import { ContactLink } from "../ContactLink";
 import { Container } from "../Container";
-import useToggleDarkTheme from "../useToggleDarkTheme";
 import {
   FooterContent,
   ContentElement,

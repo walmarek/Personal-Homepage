@@ -7,14 +7,15 @@ export const PortfolioList = styled.div`
   gap: 32px;
   margin-top: 24px;
 
-  @media (max-width: ${({theme}) => theme.breakpoint.laptop}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.laptop}) {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
-    }
+  }
 `;
+
 export const RepoTile = styled.div`
- padding: 51px;
+  padding: 51px;
   background: ${({ theme }) => theme.color.white};
   border: 6px solid ${({ theme }) => theme.color.iron}4D;
   box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.cetaceanBlue}08,
@@ -41,9 +42,9 @@ export const RepoTile = styled.div`
       }
     `}
 
-    @media (max-width: ${({theme}) => theme.breakpoint.tablet}) {
-   padding: 24px;
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
+    padding: 24px;
+  }
 `;
 
 export const RepoTitle = styled.h3`
@@ -60,23 +61,23 @@ export const RepoTitle = styled.h3`
       color: ${({ theme }) => theme.color.white};
     `}
 
-    @media (max-width: ${({theme}) => theme.breakpoint.tablet}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
     font-size: 22px;
-    }
+  }
 
-    @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 16px;
-    }
+  }
 `;
 
 export const RepoDescription = styled.p`
   font-size: 18px;
   line-height: 25px;
 
-  @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 14px;
     line-height: 19px;
-    }
+  }
 `;
 export const RepoLinks = styled.div`
   font-size: 18px;
@@ -85,9 +86,9 @@ export const RepoLinks = styled.div`
   gap: 8px;
   justify-content: left;
 
-  @media (max-width: ${({theme}) => theme.breakpoint.tablet}) {
-  font-size: 14px;
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
+    font-size: 14px;
+  }
 `;
 
 export const RepoLink = styled.a`
@@ -95,7 +96,7 @@ export const RepoLink = styled.a`
 `;
 
 export const RepoUrl = styled.span`
-border-bottom: 1px solid ${({ theme }) => theme.color.trueBlue}33;
+  border-bottom: 1px solid ${({ theme }) => theme.color.trueBlue}33;
   color: ${({ theme }) => theme.color.trueBlue};
   transition: 0.3s;
 
@@ -108,4 +109,4 @@ border-bottom: 1px solid ${({ theme }) => theme.color.trueBlue}33;
     css`
       color: ${({ theme }) => theme.color.dodgerBlue};
     `}
-`
+`;

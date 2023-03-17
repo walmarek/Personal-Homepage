@@ -5,6 +5,7 @@ export const LoaderWrapper = styled.div`
   grid-template-columns: auto;
   justify-items: center;
 `;
+
 export const SpinnerInfo = styled.span`
   position: relative;
   top: -90px;
@@ -26,7 +27,6 @@ export const Spinner = styled.div`
       color: ${({ theme }) => theme.color.dodgerBlue};
     `}
 
-
   @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -36,6 +36,7 @@ export const Spinner = styled.div`
       transform: rotate(360deg);
     }
   }
+
   ${({ toggleDarkMode }) =>
     toggleDarkMode &&
     css`

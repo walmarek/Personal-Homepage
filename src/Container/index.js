@@ -13,6 +13,7 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.color.white};
       background: ${({ theme }) => theme.color.raisinBlack};
     `}
+
   @media (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
     grid-template-columns: auto;
     margin-top: 32px;

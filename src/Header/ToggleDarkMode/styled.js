@@ -60,7 +60,7 @@ export const Circle = styled.div`
     `}
 `;
 export const Span = styled.span`
- @media (max-width: ${({theme}) => theme.breakpoint.mobile}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     display: none;
-    }
-`
+  }
+`;

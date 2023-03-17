@@ -1,6 +1,6 @@
+import useToggleDarkTheme from "../../useToggleDarkTheme";
 import { useSelector } from "react-redux";
 import { selectRepos, selectLoadingState } from "../../appSlice";
-import useToggleDarkTheme from "../../useToggleDarkTheme";
 import { Loader } from "./Loader";
 import { PortfolioContent } from "./PortfolioContent";
 import { PortfolioHeader } from "./PortfolioHeader";

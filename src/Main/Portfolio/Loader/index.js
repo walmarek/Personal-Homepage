@@ -1,6 +1,6 @@
+import useToggleDarkTheme from "../../../useToggleDarkTheme";
 import { useSelector } from "react-redux";
 import { selectLoadingState } from "../../../appSlice";
-import useToggleDarkTheme from "../../../useToggleDarkTheme";
 import { LoadingError } from "./LoadingError";
 import { Spinner, LoaderWrapper, SpinnerInfo, LoadingMessage } from "./styled";
 

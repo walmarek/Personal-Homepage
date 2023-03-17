@@ -1,8 +1,7 @@
+import useToggleDarkTheme from "../../../../useToggleDarkTheme";
 import { Button } from "../../../../Button";
 import { ContactLink } from "../../../../ContactLink";
-import useToggleDarkTheme from "../../../../useToggleDarkTheme";
 import { PortfolioContent } from "../../PortfolioContent";
-
 import { ErrorIcon, ErrorInfo, ErrorTitle } from "./styled";
 
 export const LoadingError = () => {

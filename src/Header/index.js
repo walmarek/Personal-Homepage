@@ -1,3 +1,4 @@
+import useToggleDarkTheme from "../useToggleDarkTheme";
 import { Container } from "../Container";
 import {
   ImageHeader,
@@ -11,7 +12,6 @@ import {
 import myImage from "../images/marek-wal-photo.jpg";
 import { Button } from "../Button";
 import { ToggleDarkMode } from "./ToggleDarkMode";
-import useToggleDarkTheme from "../useToggleDarkTheme";
 import { ContactLink } from "../ContactLink";
 
 export const Header = () => {

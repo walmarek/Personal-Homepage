@@ -56,16 +56,14 @@ export const mySkills = [
   {
     skill: "React.js",
   },
-
   {
     skill: "Immutability",
   },
-
   {
     skill: "Markdown",
   },
   {
-skill: "Redux-saga",
+    skill: "Redux-saga",
   },
   {
     skill: "NPM",
@@ -94,7 +92,6 @@ export const toLearnSkills = [
   {
     skill: "Wordpress",
   },
-
   {
     skill: "Node.js",
   },

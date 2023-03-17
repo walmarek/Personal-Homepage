@@ -1,5 +1,5 @@
-import { GitHubIcon, PortfolioTitle, UnderTitle } from "./styled";
 import useToggleDarkTheme from "../../../useToggleDarkTheme";
+import { GitHubIcon, PortfolioTitle, UnderTitle } from "./styled";
 
 export const PortfolioHeader = () => {
   const darkTheme = useToggleDarkTheme();
