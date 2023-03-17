@@ -13,7 +13,7 @@ This project contains list of my skills and list of skills I want to develop, al
 [**Link**](https://walmarek.github.io/Personal-Homepage/)
 
 <p align="center">
-  <img src="e">
+  <img src="https://github.com/walmarek/Personal-Homepage/blob/main/src/images/personal-homepage.gif?raw=true">
 </p>
 
 
