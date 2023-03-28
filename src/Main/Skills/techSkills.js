@@ -1,101 +1,37 @@
 export const mySkills = [
-  {
-    skill: "Semantic & accessibility HTML",
-  },
-  {
-    skill: "React-Router",
-  },
-  {
-    skill: "GitHub Pull Requests & Review",
-  },
-  {
-    skill: "CSS",
-  },
-  {
-    skill: "Redux/Toolkit",
-  },
-  {
-    skill: "Git",
-  },
-  {
-    skill: "CSS BEM convention",
-  },
-  {
-    skill: "React Hooks",
-  },
-  {
-    skill: "Teamwork",
-  },
-  {
-    skill: "CSS Grid",
-  },
-  {
-    skill: "API (fetch,axios)",
-  },
-  {
-    skill: "Scrum",
-  },
-  {
-    skill: "CSS Flexbox",
-  },
-  {
-    skill: "Promises, Async/Await",
-  },
-  {
-    skill: "Trello",
-  },
-  {
-    skill: "JavaScript ES6+",
-  },
-  {
-    skill: "Error handling",
-  },
-  {
-    skill: "Jira",
-  },
-  {
-    skill: "React.js",
-  },
-  {
-    skill: "Immutability",
-  },
-  {
-    skill: "Markdown",
-  },
-  {
-    skill: "Redux-saga",
-  },
-  {
-    skill: "NPM",
-  },
+  "Semantic & accessibility HTML",
+  "React-Router",
+  "GitHub Pull Requests & Review",
+  "CSS",
+  "Redux/Toolkit",
+  "Git",
+  "CSS BEM convention",
+  "React Hooks",
+  "Teamwork",
+  "CSS Grid",
+  "API (fetch,axios)",
+  "Scrum",
+  "CSS Flexbox",
+  "Promises, Async/Await",
+  "Trello",
+  "JavaScript ES6+",
+  "Error handling",
+  "Jira",
+  "React.js",
+  "Immutability",
+  "Markdown",
+  "Redux-saga",
+  "NPM",
 ];
 
 export const toLearnSkills = [
-  {
-    skill: "Java",
-  },
-  {
-    skill: "Node.js",
-  },
-  {
-    skill: "React Native",
-  },
-  {
-    skill: "Cypress",
-  },
-  {
-    skill: "TypeScript",
-  },
-  {
-    skill: "Sass",
-  },
-  {
-    skill: "Wordpress",
-  },
-  {
-    skill: "Node.js",
-  },
-  {
-    skill: "My SQL",
-  },
+  "Java",
+  "Node.js",
+  "React Native",
+  "Cypress",
+  "TypeScript",
+  "Sass",
+  "Wordpress",
+  "Node.js",
+  "My SQL",
 ];
