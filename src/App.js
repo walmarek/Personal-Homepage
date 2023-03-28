@@ -1,18 +1,23 @@
+import { useSelector } from "react-redux";
+import { ThemeProvider } from "styled-components";
+import { selectDarkTheme } from "./appSlice";
 import { Footer } from "./Footer";
 import { GlobalStyle } from "./GlobalStyle";
 import { Header } from "./Header";
 import { Main } from "./Main";
-import useToggleDarkTheme from "./useToggleDarkTheme";
+import { darkTheme, lightTheme } from "./theme";
 
 function App() {
-  const darkTheme = useToggleDarkTheme();
+  const darkMode = useSelector(selectDarkTheme);
 
   return (
     <>
-      <GlobalStyle toggleDarkMode={darkTheme} />
-      <Header />
-      <Main />
-      <Footer />
+      <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+        <GlobalStyle />
+        <Header />
+        <Main />
+        <Footer />
+      </ThemeProvider>
     </>
   );
 }
