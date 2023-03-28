@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { ReactComponent as Ellipse } from "../../images/ellipse.svg";
 
 export const SkillsTitle = styled.h2`
@@ -8,15 +8,9 @@ export const SkillsTitle = styled.h2`
   letter-spacing: 0.05em;
   padding: 32px 0 15px 0;
   margin: 32px;
-  border-bottom: 1px solid ${({ theme }) => theme.color.iron};
-  color: ${({ theme }) => theme.color.raisinBlack};
+  border-bottom: 1px solid ${({ theme }) => theme.color.skillsTitleBorderBottom};
+  color: ${({ theme }) => theme.color.skillsTitleColor};
   transition: 0.4s ease-in;
-
-  ${({ toggleDarkMode }) =>
-    toggleDarkMode &&
-    css`
-      color: ${({ theme }) => theme.color.white};
-    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     font-size: 18px;
@@ -52,13 +46,7 @@ export const List = styled.ul`
 export const EllipseIcon = styled(Ellipse)`
   margin-right: 16px;
   justify-content: center;
-  color: ${({ theme }) => theme.color.trueBlue};
-
-  ${({ toggleDarkMode }) =>
-    toggleDarkMode &&
-    css`
-      color: ${({ theme }) => theme.color.dodgerBlue};
-    `}
+  color: ${({ theme }) => theme.color.ellipseIconColor};
 `;
 
 export const Item = styled.li`

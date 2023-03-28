@@ -4,18 +4,18 @@ import NightIcon from "../../images/weather-night.svg";
 import { selectDarkTheme, toggleDarkTheme } from "../../appSlice";
 
 export const ToggleDarkMode = () => {
-  const darkTheme = useSelector(selectDarkTheme);
+  const darkMode = useSelector(selectDarkTheme);
   const dispatch = useDispatch();
 
   return (
     <DarkMode>
-      <Span>DARK MODE{darkTheme ? " ON" : " OFF"}</Span>
+      <Span>DARK MODE{darkMode ? " ON" : " OFF"}</Span>
       <DarkModeButton
-        toggleDarkMode={darkTheme}
+       
         onClick={() => dispatch(toggleDarkTheme())}
       >
-        <Circle toggleDarkMode={darkTheme}>
-          {darkTheme ? <SunIcon /> : <MoonIcon src={NightIcon} />}
+        <Circle animationCircle={darkMode}>
+          {darkMode ? <SunIcon /> : <MoonIcon src={NightIcon} />}
         </Circle>
       </DarkModeButton>
     </DarkMode>

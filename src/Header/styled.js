@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { ReactComponent as MessageIcon } from "../images/message-icon.svg";
 
 export const ImageHeader = styled.img`
@@ -34,11 +34,11 @@ export const ContainerElement = styled.span`
   line-height: 130%;
   font-weight: 700;
   margin-bottom: 12px;
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.color.containerElementColor};
 `;
 
 export const ContainerInfo = styled.div`
-  color: ${({ theme }) => theme.color.slateGray};
+  color: ${({ theme }) => theme.color.containerInfoColor};
   font-size: 20px;
   line-height: 140%;
   margin-bottom: 32px;
@@ -49,7 +49,7 @@ export const ContainerInfo = styled.div`
 `;
 
 export const ContainerTitle = styled.h1`
-  color: ${({ theme }) => theme.color.raisinBlack};
+  color: ${({ theme }) => theme.color.containerTitleColor};
   font-size: 38px;
   font-weight: 900;
   line-height: 46px;
@@ -57,12 +57,6 @@ export const ContainerTitle = styled.h1`
   margin-top: 12px;
   margin-bottom: 35px;
   transition: 0.4s ease-in;
-
-  ${({ toggleDarkMode }) =>
-    toggleDarkMode &&
-    css`
-      color: ${({ theme }) => theme.color.white};
-    `}
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
     margin-top: 8px;

@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle} from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -14,21 +14,14 @@ html {
   body {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    color: ${({ theme }) => theme.color.slateGrey};   
-    background: ${({ theme }) => theme.color.ghostWhite};
+    color: ${({ theme }) => theme.color.bodyColor};   
+    background: ${({ theme }) => theme.color.bodyBackground};
     max-width: 1216px;
     margin: 6px auto; 
     transition: 0.4s ease-in;
 
-    ${({ toggleDarkMode }) =>
-      toggleDarkMode &&
-      css`
-        color: ${({ theme }) => theme.color.white};
-        background: ${({ theme }) => theme.color.raisinBlack};
-      `}
-
       @media (max-width: ${({ theme }) => theme.breakpoint.laptop}) {
-margin: 16px;
+        margin: 16px;
 }
   }
 `;
