@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const ContactLink = styled.a`
-  text-decoration: none;
+export const ContactLink = styled.span` 
 `;
+
