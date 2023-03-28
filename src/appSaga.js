@@ -4,8 +4,8 @@ import { getReposFromAPI } from "./Main/Portfolio/getReposFromAPI";
 
 function* fetchReposHandler() {
   try {
-    const repos = yield call(getReposFromAPI);
     yield delay(1400);
+    const repos = yield call(getReposFromAPI);
     yield put(setRepos(repos));
     yield put(setLoadingSuccess());
   } catch (error) {
