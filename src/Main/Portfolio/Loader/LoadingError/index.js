@@ -1,30 +1,28 @@
-import useToggleDarkTheme from "../../../../useToggleDarkTheme";
 import { Button } from "../../../../Button";
-import { ContactLink } from "../../../../ContactLink";
+import { Link } from "../../../../Link";
 import { PortfolioContent } from "../../PortfolioContent";
 import { ErrorIcon, ErrorInfo, ErrorTitle } from "./styled";
 
 export const LoadingError = () => {
-  const darkTheme = useToggleDarkTheme();
 
   return (
     <PortfolioContent>
-      <ErrorIcon toggleDarkMode={darkTheme} />
-      <ErrorTitle toggleDarkMode={darkTheme}>
+      <ErrorIcon />
+      <ErrorTitle>
         Ooops! Something went wrong...
       </ErrorTitle>
-      <ErrorInfo toggleDarkMode={darkTheme}>
+      <ErrorInfo>
         Sorry, failed to load GitHub projects.
         <br />
         You can check them directly on GitHub.
       </ErrorInfo>
-      <ContactLink
+      <Link
         href={"https://github.com/walmarek"}
         rel="me"
         target="_blank"
       >
         <Button>Go to GitHub</Button>
-      </ContactLink>
+      </Link>
     </PortfolioContent>
   );
 };
