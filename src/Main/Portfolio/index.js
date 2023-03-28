@@ -1,4 +1,3 @@
-import useToggleDarkTheme from "../../useToggleDarkTheme";
 import { useSelector } from "react-redux";
 import { selectRepos, selectLoadingState } from "../../appSlice";
 import { Loader } from "./Loader";
@@ -15,7 +14,6 @@ import {
 } from "./styled";
 
 export const Portfolio = () => {
-  const darkTheme = useToggleDarkTheme();
   const repos = useSelector(selectRepos);
 
   const loadingState = useSelector(selectLoadingState);
@@ -23,19 +21,18 @@ export const Portfolio = () => {
   return (
     <PortfolioContent>
       <PortfolioHeader />
-      <Loader toggleDarkMode={darkTheme} />
-      {loadingState === "success" ? (
-        <PortfolioList toggleDarkMode={darkTheme}>
+      <Loader/>
+      {loadingState === "success" && (
+        <PortfolioList>
           {repos.map((repo) => (
-            <RepoTile toggleDarkMode={darkTheme} key={repo.id}>
-              <RepoTitle toggleDarkMode={darkTheme}>
+            <RepoTile key={repo.id}>
+              <RepoTitle >
                 {repo.name.replaceAll("-", " ")}
               </RepoTitle>
               <RepoDescription>{repo.description}</RepoDescription>
               <RepoLinks>
                 Demo:
                 <RepoLink
-                  toggleDarkMode={darkTheme}
                   href={repo.homepage}
                   rel="me"
                   target="_blank"
@@ -44,7 +41,6 @@ export const Portfolio = () => {
                 </RepoLink>
                 Code:
                 <RepoLink
-                  toggleDarkMode={darkTheme}
                   href={repo.html_url}
                   rel="me"
                   target="_blank"
@@ -55,8 +51,6 @@ export const Portfolio = () => {
             </RepoTile>
           ))}
         </PortfolioList>
-      ) : (
-        ""
       )}
     </PortfolioContent>
   );
