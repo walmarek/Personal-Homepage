@@ -14,7 +14,6 @@ import { ToggleDarkMode } from "./ToggleDarkMode";
 import { Link } from "../Link";
 
 export const Header = () => {
-
   return (
     <>
       <Container>

@@ -42,7 +42,7 @@ export const Circle = styled.div`
   box-shadow: 0 0 5px ${({ theme }) => theme.color.circleBoxShadow};
   position: relative;
   left: -4.5px;
-  transition: 1s ease-in ;
+  transition: 1s ease-in;
 
   ${({ animationCircle }) =>
     animationCircle &&

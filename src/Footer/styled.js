@@ -55,7 +55,6 @@ export const ContentInfo = styled.div`
   }
 `;
 
-
 export const FooterIcons = styled.div`
   display: flex;
   gap: 24px;

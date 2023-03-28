@@ -10,16 +10,16 @@ export const Loader = () => {
     <LoaderWrapper>
       {!loadingState ? (
         <>
-          <LoadingMessage >
+          <LoadingMessage>
             Please wait, projects are being loaded.
           </LoadingMessage>
-          <Spinner/>
+          <Spinner />
           <SpinnerInfo>Loading....</SpinnerInfo>
         </>
       ) : (
         ""
       )}
-      {loadingState === "error" && (<LoadingError />)}
+      {loadingState === "error" && <LoadingError />}
     </LoaderWrapper>
   );
 };

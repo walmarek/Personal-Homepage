@@ -21,30 +21,20 @@ export const Portfolio = () => {
   return (
     <PortfolioContent>
       <PortfolioHeader />
-      <Loader/>
+      <Loader />
       {loadingState === "success" && (
         <PortfolioList>
           {repos.map((repo) => (
             <RepoTile key={repo.id}>
-              <RepoTitle >
-                {repo.name.replaceAll("-", " ")}
-              </RepoTitle>
+              <RepoTitle>{repo.name.replaceAll("-", " ")}</RepoTitle>
               <RepoDescription>{repo.description}</RepoDescription>
               <RepoLinks>
                 Demo:
-                <RepoLink
-                  href={repo.homepage}
-                  rel="me"
-                  target="_blank"
-                >
+                <RepoLink href={repo.homepage} rel="me" target="_blank">
                   <RepoUrl>{repo.homepage.replaceAll("https://", "")}</RepoUrl>
                 </RepoLink>
                 Code:
-                <RepoLink
-                  href={repo.html_url}
-                  rel="me"
-                  target="_blank"
-                >
+                <RepoLink href={repo.html_url} rel="me" target="_blank">
                   <RepoUrl>{repo.html_url.replaceAll("https://", "")}</RepoUrl>
                 </RepoLink>
               </RepoLinks>

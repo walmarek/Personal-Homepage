@@ -3,7 +3,6 @@ import { Skills } from "./Skills";
 import { mySkills, toLearnSkills } from "./Skills/techSkills";
 
 export const Main = () => {
-
   return (
     <>
       <Skills techSkills={mySkills} title="My skillset includes 🛠️" />

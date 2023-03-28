@@ -1,10 +1,9 @@
 import { GitHubIcon, PortfolioTitle, UnderTitle } from "./styled";
 
 export const PortfolioHeader = () => {
-
   return (
     <>
-      <GitHubIcon/>
+      <GitHubIcon />
       <PortfolioTitle>Portfolio</PortfolioTitle>
       <UnderTitle>My recent projects</UnderTitle>
     </>
