@@ -8,7 +8,7 @@ export const Loader = () => {
 
   return (
     <LoaderWrapper>
-      {!loadingState ? (
+      {!loadingState && (
         <>
           <LoadingMessage>
             Please wait, projects are being loaded.
@@ -16,8 +16,6 @@ export const Loader = () => {
           <Spinner />
           <SpinnerInfo>Loading....</SpinnerInfo>
         </>
-      ) : (
-        ""
       )}
       {loadingState === "error" && <LoadingError />}
     </LoaderWrapper>
