@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const PortfolioList = styled.div`
+export const PortfolioList = styled.ul`
   padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
@@ -14,14 +15,14 @@ export const PortfolioList = styled.div`
   }
 `;
 
-export const RepoTile = styled.div`
+export const RepoTile = styled.li`
   padding: 51px;
   background: ${({ theme }) => theme.color.repoTileBackground};
   border: 6px solid ${({ theme }) => theme.color.repoTileBorder}4D;
   box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.color.repoTileBoxShadow}08,
     0px -2px 50px 0px ${({ theme }) => theme.color.repoTileBoxShadow}05;
   border-radius: 4px;
-  transition: 0.4s;
+  transition: 0.4s ease-in;
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.color.repoTileBoxShadow}33;

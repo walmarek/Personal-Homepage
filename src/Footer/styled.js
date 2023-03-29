@@ -4,7 +4,7 @@ import { ReactComponent as FacebookIcon } from "../images/facebook-icon.svg";
 import { ReactComponent as LinkedinIcon } from "../images/linkedin-icon.svg";
 import { ReactComponent as InstaIcon } from "../images/insta-icon.svg";
 
-export const FooterContent = styled.div`
+export const FooterContent = styled.footer`
   max-width: 670px;
   margin-bottom: 109px;
 
@@ -20,7 +20,7 @@ export const ContentElement = styled.span`
   color: ${({ theme }) => theme.color.contentElementColor};
 `;
 
-export const ContentTitle = styled.div`
+export const ContentTitle = styled.h2`
   color: ${({ theme }) => theme.color.contentTitleColor};
   font-size: 32px;
   font-weight: 900;

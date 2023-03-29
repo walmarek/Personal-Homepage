@@ -4,7 +4,7 @@ import { ReactComponent as MessageIcon } from "../images/message-icon.svg";
 export const ImageHeader = styled.img`
   max-width: 398px;
   max-height: 398px;
-  width: 100%;
+  width: 30vw;
   margin-right: 66px;
   border-radius: 50%;
 
@@ -20,8 +20,10 @@ export const Span = styled.span`
   margin: 0;
 `;
 
-export const EmailIcon = styled(MessageIcon)``;
-export const Aside = styled.div`
+export const EmailIcon = styled(MessageIcon)`
+`;
+
+export const Aside = styled.header`
   margin-top: 68px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
@@ -37,7 +39,7 @@ export const ContainerElement = styled.span`
   color: ${({ theme }) => theme.color.containerElementColor};
 `;
 
-export const ContainerInfo = styled.div`
+export const ContainerInfo = styled.article`
   color: ${({ theme }) => theme.color.containerInfoColor};
   font-size: 20px;
   line-height: 140%;
