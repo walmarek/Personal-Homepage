@@ -1,5 +1,5 @@
-import { ContactLink } from "../ContactLink";
 import { Container } from "../Container";
+import { email } from "../email";
 import { Link } from "../Link";
 import {
   FooterContent,
@@ -18,11 +18,11 @@ export const Footer = () => {
     <Container>
       <FooterContent>
         <ContentElement>LET'S TALK</ContentElement>
-        <ContactLink>
-          <Link href={"mailto: walmarek1987@gmail.com"}>
-            <ContentTitle>walmarek1987@gmail.com</ContentTitle>
-          </Link>
-        </ContactLink>
+
+        <Link href={`mailto:${email}`}>
+          <ContentTitle>{email}</ContentTitle>
+        </Link>
+
         <ContentInfo>
           I've been developing Frontend skills since June 2022 and my target is
           to master abilities and competencies needed for creating web
@@ -30,38 +30,33 @@ export const Footer = () => {
           commited.
         </ContentInfo>
         <FooterIcons>
-          <ContactLink>
-            <Link href={"https://github.com/walmarek"} rel="me" target="_blank">
-              <GitHub />
-            </Link>
-          </ContactLink>
-          <ContactLink>
-            <Link
-              href={"https://www.facebook.com/profile.php?id=100090407584455"}
-              rel="me"
-              target="_blank"
-            >
-              <Facebook />
-            </Link>
-          </ContactLink>
-          <ContactLink>
-            <Link
-              href={"https://www.linkedin.com/in/marek-wal-10902526a/"}
-              rel="me"
-              target="_blank"
-            >
-              <Linkedin />
-            </Link>
-          </ContactLink>
-          <ContactLink>
-            <Link
-              href={"https://www.instagram.com/best_wood_world/"}
-              rel="me"
-              target="_blank"
-            >
-              <Insta />
-            </Link>
-          </ContactLink>
+          <Link href={"https://github.com/walmarek"} rel="me" target="_blank">
+            <GitHub />
+          </Link>
+
+          <Link
+            href={"https://www.facebook.com/profile.php?id=100090407584455"}
+            rel="me"
+            target="_blank"
+          >
+            <Facebook />
+          </Link>
+
+          <Link
+            href={"https://www.linkedin.com/in/marek-wal-10902526a/"}
+            rel="me"
+            target="_blank"
+          >
+            <Linkedin />
+          </Link>
+
+          <Link
+            href={"https://www.instagram.com/best_wood_world/"}
+            rel="me"
+            target="_blank"
+          >
+            <Insta />
+          </Link>
         </FooterIcons>
       </FooterContent>
     </Container>
