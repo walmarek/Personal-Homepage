@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   background: ${({ theme }) => theme.color.containerBackground};
   display: grid;
   grid-template-columns: auto auto;
