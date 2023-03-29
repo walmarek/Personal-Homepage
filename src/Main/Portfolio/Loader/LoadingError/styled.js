@@ -7,6 +7,10 @@ export const ErrorIcon = styled(DangerIcon)`
   width: 53px;
   height: 48px;
   transition: 0.4s ease-in;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
+    margin-top: 32px;
+  }
 `;
 
 export const ErrorTitle = styled.h3`
@@ -14,9 +18,19 @@ export const ErrorTitle = styled.h3`
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
+  text-align: center;
   color: ${({ theme }) => theme.color.errorIconColor};
   transition: 0.4s ease-in;
  
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 `;
 
 export const ErrorInfo = styled.p`
@@ -26,4 +40,15 @@ export const ErrorInfo = styled.p`
   text-align: center;
   color: ${({ theme }) => theme.color.errorIconColor};
   transition: 0.4s ease-in;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
 `;

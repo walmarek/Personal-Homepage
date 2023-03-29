@@ -8,24 +8,33 @@ export const LoaderWrapper = styled.div`
 
 export const SpinnerInfo = styled.span`
   position: relative;
-  top: -90px;
+  top: -100px;
   font-size: 20px;
+  line-height: 22px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    font-size: 14px;
+    top: -70px;
+  }
 `;
 
 export const Spinner = styled.div`
-  border-top: 16px solid ${({ theme }) => theme.color.spinnerBorderTop};
-  border-bottom: 16px solid ${({ theme }) => theme.color.spinnerBorderBottom};
+  border-top: 10px solid ${({ theme }) => theme.color.spinnerBorderBottom};
+  border-bottom: 10px solid #eee;
+  border-right: 10px solid #eee;
+  border-left: 10px solid #eee;
   border-radius: 50%;
-  width: 160px;
-  height: 160px;
-  animation: spin 1.1s linear infinite;
+  width: 180px;
+  height: 180px;
+  animation: spin 1.4s linear infinite;
   transition: 0.4s ease-in;
 
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    width: 120px;
+    height: 120px;
+  }
 
+  @keyframes spin {
     100% {
       transform: rotate(360deg);
     }

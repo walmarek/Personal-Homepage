@@ -47,6 +47,11 @@ export const EllipseIcon = styled(Ellipse)`
   margin-right: 16px;
   justify-content: center;
   color: ${({ theme }) => theme.color.ellipseIconColor};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}) {
+    margin-right: 8px;
+    width: 6px;
+  }
 `;
 
 export const Item = styled.li`
