@@ -31,11 +31,11 @@ export const Portfolio = () => {
               <RepoLinks>
                 Demo:
                 <RepoLink href={repo.homepage} rel="me" target="_blank">
-                  <RepoUrl>{repo.homepage.replaceAll("https://", "")}</RepoUrl>
+                  <RepoUrl>{repo.homepage.replaceAll("https://", " ")}</RepoUrl>
                 </RepoLink>
                 Code:
                 <RepoLink href={repo.html_url} rel="me" target="_blank">
-                  <RepoUrl>{repo.html_url.replaceAll("https://", "")}</RepoUrl>
+                  <RepoUrl>{repo.html_url.replaceAll("https://", " ")}</RepoUrl>
                 </RepoLink>
               </RepoLinks>
             </RepoTile>
