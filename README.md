@@ -18,7 +18,7 @@ This project contains list of my skills and list of skills I want to develop, al
 
 ## Features
 
-- Toggle dar mode
+- Toggle dark mode
 - API(axios)
 - Error handling
 - Redux-saga
